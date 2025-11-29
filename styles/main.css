@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #eef1f4, #dfe6ec, #f8f9fa);
+    background-attachment: fixed;
+    color: black;
+}
+
+header {
+    background: linear-gradient(90deg, rgb(15, 14, 14), #0d1125);
+    padding: 70px 0;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00c3ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.3);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-text h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 12px;
+    color: #00c3ff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #8266ff;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section.alt {
+    background: white;
+    border-radius: 14px;
+    margin-top: 40px;
+}
+
+h3 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    border-left: 6px solid #00aaff;
+    padding-left: 12px;
+    font-weight: 600;
+}
+
+.project {
+    margin-bottom: 35px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px gray;
+}
+
+.project h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    background: linear-gradient(90deg, rgb(15, 14, 14), #0d1125);
+    color: #bbb;
+    text-align: center;
+    font-size: 14px;
+}

@@ -12,12 +12,12 @@
     <div class="container header-flex">
 
         <div class="profile-pic">
-            <img src="assets/pfp.jpg" alt="Profile Picture">
+            <img src="{{PFP}}" alt="Profile Picture">
         </div>
 
         <div class="header-text">
-            <h1>Dinas</h1>
-            <h2>First year software-engineering student</h2>
+            <h1>{{NAME}}</h1>
+            <h2>{{BIO}}</h2>
 
             <nav>
                 <a href="#about">About</a>
@@ -34,20 +34,14 @@
     <section id="about" class="section">
         <div class="container">
             <h3>About Me</h3>
-            <p>I am passionate about technology and cars. I keep up with the latest news</p>
+            <p>{{ABOUT}}</p>
         </div>
     </section>
 
     <section id="education" class="section alt">
         <div class="container">
             <h3>Education</h3>
-            <div class="education-entry">
-                <h4>St. Kristoforo gymnasium</h4>
-                <p class="degree"></p>
-                <p class="year">4</p>
-            </div>
-
-            
+            {{EDUCATION}}
         </div>
     </section>
 
@@ -55,9 +49,7 @@
         <div class="container">
             <h3>Skills</h3>
             <ul class="skills">
-                <li>Basic C skills</li>
-                <li>Shell</li>
-                
+                {{SKILLS}}
             </ul>
         </div>
     </section>
@@ -65,14 +57,14 @@
     <section id="projects" class="section alt">
         <div class="container">
             <h3>Projects</h3>
-            
+            {{PROJECTS}}
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h3>Contact information</h3>
-            <p>Facebook, Linkedin...</p>
+            <p>{{CONTACT}}</p>
         </div>
     </section>
 

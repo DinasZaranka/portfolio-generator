@@ -163,7 +163,7 @@ int main(int argc, char *argv[]) {
     
     
     // ----------------------------------------
-    // Collect user input: Contact (last, since it's at the bottom of the website)
+    // Collect user input: Contact
     // ----------------------------------------
     
     printf("\n--- Contact ---\n");

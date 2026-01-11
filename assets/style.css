@@ -76,6 +76,7 @@ nav a:hover {
     width: 90%;
     max-width: 900px;
     margin: auto;
+    word-wrap: break-word;
 }
 
 .section {
@@ -112,6 +113,59 @@ h3 {
 .project h4 {
     font-size: 24px;
     margin-bottom: 12px;
+}
+
+.education-entry {
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-left: 25px;
+    border-left: 4px solid #00aaff;
+    background: linear-gradient(90deg, rgba(0,170,255,0.05), transparent);
+    border-radius: 0 12px 12px 0;
+    transition: 0.3s ease;
+}
+
+.education-entry:hover {
+    border-left-color: #8266ff;
+    background: linear-gradient(90deg, rgba(130,102,255,0.08), transparent);
+}
+
+.education-entry h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.education-entry .degree {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.education-entry .year {
+    color: #888;
+    font-size: 14px;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills li {
+    background: linear-gradient(135deg, #00aaff, #8266ff);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    word-wrap: break-word;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.4);
 }
 
 footer {

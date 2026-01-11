@@ -11,7 +11,6 @@
  * For example, if argv[0] is "C:\Users\Me\Desktop\folder\generator.exe",
  * this function extracts "C:\Users\Me\Desktop\folder\" and stores it in executable_directory.
  * 
- * This is important because we want to find template.html in the same folder as the exe.
  */
 void extract_executable_directory(const char *argument_zero);
 
@@ -35,7 +34,7 @@ int write_file_contents(const char *filepath, const char *content);
  * This is the core function for generating HTML - finds placeholders like "{{NAME}}"
  * and replaces them with actual user data.
  * 
- * Returns a NEW string (caller must free it).
+ * Returns a string (caller must free it).
  */
 char *replace_placeholder(const char *source, const char *placeholder, const char *replacement);
 
